@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #333333;
+    color: #fff;
+}
+
+.seccion {
+    width: 100%;
+    padding: 1rem;
+}
+
+.seccion__titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Grids tenemos la misma analogia como vimos en flexbox, desde el padre y dentro sus hijos directos que van a ser manipulados */
+
+/* Elemento Padre */
+
+.grid {
+    border: 2px solid #555;
+    padding: 1rem;
+    min-height: 500px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    /* Propiedad obligatoria para usar CSS Grid */
+    display: grid;
+    /* Dibujar primero las columnas de dicha cuadricula */
+    /* grid-template-columns: col1 col2 col3 colN...; */
+    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: repeat(3, 100px);
+    /* Unidad de medida solo en grid que se llama fraccion (1fr) */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    /* Dibujar primero las filas de dicha cuadricula */
+    /* grid-template-rows: row1 row2 row3 rowN...; */
+    grid-template-rows: 100px 200px 100px;
+    grid-template-rows: 25% 25% 100px;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+
+    /* Referenciar la cuadricula por areas */
+    grid-template-areas: 
+        "ele1 ele2 ele2" /* Fila 1 */
+        "ele3 ele3 ele4" /* Fila 2 */
+        "ele5 ele6 ele4"; /* Fila 3 */
+
+    /* Propiedades opcionales que podemos utilizar en ciertos casitos */
+    justify-items: stretch; /* Mover los hijos en relacion a la celda que ocupan en horizontal */
+    align-items: stretch; /* Mover los hijos en relacion a la celda que ocupan en vertical */
+
+    /* Si tenemos espacio disponible o sobrante en el padre moviendo el conjunto de la cuadricula (filas o columnas)*/
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    /* Permite generar un hueco o separacion interna entre filas y columnas, esto va en el padre */
+    column-gap: 10px;
+    row-gap: 20px;
+    gap: 10px 20px;
+    gap: 20px;
+
+}
+
+
+/* Elemento hijo o hijos directos */
+
+.grid__hijo {
+    border: 2px solid orange;
+    padding: 1rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.grid__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Detalles de color para los elementos hijos directos xD */
+
+.grid__hijo--1 {
+    grid-area: ele1;
+    background-color: #2a80b9;
+}
+
+.grid__hijo--2 {
+    grid-area: ele2;
+    background-color: #8f44ad;
+}
+
+.grid__hijo--3 {
+    grid-area: ele3;
+    background-color: #16a086;
+}
+
+.grid__hijo--4 {
+    grid-area: ele4;
+    background-color: #f1c40f;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.grid__hijo--5 {
+    grid-area: ele5;
+    background-color: #e77e23;
+}
+
+.grid__hijo--6 {
+    grid-area: ele6;
+    background-color: #e72326;
+}
+
+
+
+.grid__texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.5rem 1rem;
+}

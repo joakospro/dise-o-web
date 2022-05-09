@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Modelo Caja */
+}
+
+body {
+    background-color: #D4E0EE;
+    font-family: 'Outfit', sans-serif;
+}
+
+.seccion {
+    padding-top: 4rem;
+}
+
+.seccion__titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+    /* 
+        Metodología BEM -> Bloque, Elemento, Modificador
+
+            Nos sugiere una manera estructurada de nombrar nuestras clases. tu la utilizas si quieres o no, esta demas decir que no es la unica metodologia a seguir...
+
+        Se centra en tres parámetros o variables posibles: 
+        
+            bloques -> elemento, contenedor o pieza reutilizable
+            elementos -> elementos internos del bloque
+            modificadores -> (Opcional) variante al bloque o elemento
+
+        Debes usar clases recuerda....
+        
+        Ejemplo Generico:
+
+        .bloque -> bloque
+        .bloque__elemento1 -> elemento1 del bloque
+        .bloque__elemento2 -> elemento2 del bloque
+        .bloque__elemento3 -> elemento3 del bloque
+
+        .bloque--variante1 -> modificador del bloque (opcional)
+        .bloque__elemento2--variante1 -> modificador del elemento2 (opcional)
+
+        .noticia
+
+        .noticia__titulo
+        .noticia__parrafo
+        .noticia__imagen
+        .noticia__enlace
+
+    */
+
+.tarjeta {
+    background-color: white;
+    color: black;
+
+    /* 
+        Propiedades del Modelo de Caja:
+            width, height, padding, border y margin
+
+        width -> ancho
+        height -> alto
+        padding -> espaciado interno, entre el contenido y el border
+        border -> limite
+        margin -> espaciado externo, desde el border hacia afuera con otros elementos
+        
+    */
+
+    /* 
+        width y height -> px, %, vh (viewportHeight), vw (viewportWidth), rem, etc... 
+
+        otras propiedades para controlar tamaño minimo o maximo para investigar -> min-width, max-width, min-height y max-height.
+    */
+
+    width: 300px; /* px, %, rem */
+    /* height: 400px; */ /* px, %, vh, rem */
+    min-height: 400px;
+
+    /* 
+        padding -> px, %, vh, vw, rem, etc...
+        
+        variantes de como usar con la propiedad acortada padding:
+            padding: valor; -> aplicara dicho valor arriba, derecha, abajo, izquierda. siguiendo el sentido de un reloj.
+            padding: valor1 valor2; -> aplicara dicho valor1 (arriba y abajo) y valor2 (derecha e izquierda).
+            padding: valor1 valor2 valor3; -> aplicara dicho valor1 (arriba), valor2 (derecha e izquierda) y valor3 (abajo).
+            padding: valor1 valor2 valor3 valor4; -> aplicara valor1 (arriba), valor2 (derecha), valor3 (abajo) y valor4 (izquierda).
+
+        variantes de como usar con la propiedad por separado cada lado:
+            padding-top: valor;
+            padding-right: valor;
+            padding-bottom: valor;
+            padding-left: valor;
+    */
+
+    padding: 16px;
+    padding: 16px 32px;
+    padding: 16px 32px 50px;
+    padding: 16px 32px 50px 0; /* px, rem */
+
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+
+    /* 
+        border: grosor tipo color; 
+    
+        variantes de como usar con la propiedad acortada border:
+            border: valorGrosor valorTipo valorColor;
+
+        variantes de como usar con la propiedad por separado cada lado:
+            border-top: valorGrosor valorTipo valorColor;
+            border-right: valorGrosor valorTipo valorColor;
+            border-bottom: valorGrosor valorTipo valorColor;
+            border-left: valorGrosor valorTipo valorColor;
+    */
+
+    border: 5px solid red;
+    border: 5px dashed red;
+    border: 5px dotted red;
+    border: 5px double orange;
+
+    border-top: 10px solid yellow;
+    border-right: 10px solid orange;
+    border-bottom: 10px solid red;
+    border-left: 10px solid black;
+
+    border: none;
+
+    /* Bordes redondeados */
+    border-radius: 16px;
+
+    /* 
+        margin -> px, %, vh, vw, rem, etc...
+        
+        variantes de como usar con la propiedad acortada margin:
+            margin: valor; -> aplicara dicho valor arriba, derecha, abajo, izquierda. siguiendo el sentido de un reloj.
+            margin: valor1 valor2; -> aplicara dicho valor1 (arriba y abajo) y valor2 (derecha e izquierda).
+            margin: valor1 valor2 valor3; -> aplicara dicho valor1 (arriba), valor2 (derecha e izquierda) y valor3 (abajo).
+            margin: valor1 valor2 valor3 valor4; -> aplicara valor1 (arriba), valor2 (derecha), valor3 (abajo) y valor4 (izquierda).
+
+        variantes de como usar con la propiedad por separado cada lado:
+            margin-top: valor;
+            margin-right: valor;
+            margin-bottom: valor;
+            margin-left: valor;
+    */
+
+    margin: 32px;
+    margin: 32px 16px;
+    margin: 32px 0 16px;
+    margin: 32px 0 16px 0;
+
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+
+    /* Overflow -> controlar el desborde de contenido */
+
+    overflow: hidden;
+
+    /* Position -> nos va a permitir posicionar elementos */
+
+    position: relative; /* Esto va en elemento padre mas cercano */
+}
+
+.tarjeta__imagen {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.tarjeta__titulo {
+    font-size: 28px;
+    text-align: center;
+    /* padding-bottom: 1rem; */
+    margin-bottom: 1rem; /* 1rem = 16px -> 2rem = 32px */
+    margin-top: 1rem;
+
+}
+
+.tarjeta__parrafo {
+    color: grey;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tarjeta__oferta {
+    background-color: navy;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+    position: absolute; /* Esto va en el elemento hijo que quermos superponer */
+    /* top, left, right, bottom */
+    right: 0;
+    top: 0;
+    right: 16px;
+    top: 16px;
+    right: -16px;
+    top: -16px;
+
+    right: 1rem;
+    top: 1rem;
+}
+
+.tarjeta__oferta--distinto {
+    top: 1rem;
+    left: 1rem;
+    right: unset;
+}
+
+.whatsapp {
+    background-color: green;
+    color: #D4E0EE;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    position: fixed;
+    /* top, left, right, bottom */
+
+    bottom: 2rem;
+    right: 2rem;
+    /* margin-bottom: 2rem;
+    margin-right: 2rem; */
+}
+
+.header {
+    background-color: rgba(0,0,0,0.8);
+    position: sticky; /* Esto es un hibrido parecido a un relative y fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+    z-index: 100; /* Controlamos el orden de las capas */
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+
+   
+
+
+/* Display */
+
+.linea {
+    display: block;
+    background-color: pink;
+    /* width: 100px;
+    height: 100px;
+    padding: 1rem;
+    margin: 2rem; */
+}
+
+.bloque {
+    display: inline;
+    background-color: orange;
+}
+
+
+.linea-bloque {
+    display: inline-block;
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    margin: 2rem;
+}
