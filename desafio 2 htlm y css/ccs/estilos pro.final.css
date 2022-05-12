@@ -25,6 +25,23 @@ text-align: center;
 
 }
 
+.rotate-90-cw {
+	-webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
+	        animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
+}
+
+.color{
+
+    background-color: whitesmoke;
+    color: orangered;
+    border: 2px solid orange;
+    border-radius: 2px;
+}
+
+.botonera {
+    position: relative;
+}
+
 .seccion2 {
     background-image: linear-gradient(45deg, black, purple) ;
     color: #fff;
@@ -436,6 +453,16 @@ p {
         .purple {
             flex-direction: column;
         }
+        
+    }
+
+    @media screen and (max-width: 1024px){
+
+        .position-relative{
+            display: none;
+        }
+
+
     }
 
     @media screen and (max-width: 600px){
@@ -499,6 +526,9 @@ p {
 
         .produtos1 {
            width: 300px;
+        }
+        .position-relative{
+            display: none;
         }
 
         .BLOGFLEX {
