@@ -445,7 +445,19 @@ p {
     text-decoration: none;
 }
 
+.productoboot {
+    background-color: snow
+}
 
+.productoboot__img{
+    transition: all 1s;
+}
+
+.productoboot__img:hover {
+    cursor: pointer ;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.5);
+
+}
 
 @media screen and (max-width: 1023px) {
     
