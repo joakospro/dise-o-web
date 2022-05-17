@@ -450,7 +450,7 @@ p {
 }
 
 .productoboot__img{
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .productoboot__img:hover {
