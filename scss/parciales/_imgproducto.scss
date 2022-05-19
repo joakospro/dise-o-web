@@ -1,0 +1,55 @@
+.imgproduto{
+
+    background-color: aliceblue;
+    color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 16px double $color-bordes;
+    border-radius: 32px;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+   }
+
+   .grupo__producto {
+    padding: 10px;
+    text-align: center;
+   }
+
+   .imgproducto__frascos {
+
+    border: 5px solid rgb(207, 157, 157);
+    border-radius: 5px;
+    width: 50%;
+    height: 230px;
+    object-fit: contain;
+    
+
+   }
+   .imgproducto__texto{
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 10px 30px 10px;
+   }
+
+   .imgproducto__comprar {
+       
+    background-color: navy;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    /*display: inline-block;
+    position: absolute;
+    right: 0.8rem;
+    top: 1rem;*/
+   }
+
+.imgproducto__comprar--2 {
+    
+    top: 24rem;
+    left: 55rem;
+    right: unset;
+    
+
+}
