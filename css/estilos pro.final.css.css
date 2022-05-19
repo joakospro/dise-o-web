@@ -55,7 +55,9 @@ main section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 200px 200px 200px;
-  grid-template-areas: "ele1 ele3 ele3" "ele2 ele2 ele4" "ele5 ele6 ele4";
+  grid-template-areas: "ele1 ele3 ele3"
+ "ele2 ele2 ele4"
+ "ele5 ele6 ele4";
   gap: 10px 20px;
 }
 
