@@ -1,0 +1,45 @@
+.produtos1 {
+
+    background-color: darkorange;
+    border: 2px solid  chocolate;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+   width: 50%;
+   height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.produtos1__texto {
+
+    font-size: 70px;
+    
+}
+
+.producto1__precio {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0.5rem;
+    align-self: center;
+    
+
+}
+
+.producto1__cargos {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+
+.producto1__comprar{
+
+    background-color: tomato;
+    color: bisque;
+    border: 2px solid bisque;
+    border-radius: 5rem;
+    
+
+}

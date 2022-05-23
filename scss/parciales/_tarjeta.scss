@@ -1,0 +1,58 @@
+.tarjeta {
+    background-color: white;
+    color: rgb(15, 14, 14);
+    min-height: 400px;
+    padding: 16px;
+    border: 5px double $color;
+    border-radius: 32px;
+    margin: 32px;
+    position:  relative;
+}
+
+.tarjeta__imagen {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.tarjeta__titulo {
+    color: rgb(155, 45, 5);
+    font-size: 28px;
+    text-align: center;
+    padding: 1rem;
+    border: 5px groove  yellowgreen;
+ margin: 1rem;
+
+}
+
+.tarjeta__parrafo {
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tarjeta__oferta {
+    background-color: navy;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    right: 8px;
+    top: 8px;
+    right: -16px;
+    top: -16px;
+
+    right: 1rem;
+    top: 1rem;
+}
+
+.tarjeta__oferta--distinto {
+    top: 1rem;
+    left: 1rem;
+    right: unset;
+}
