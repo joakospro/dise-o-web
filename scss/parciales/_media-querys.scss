@@ -4,6 +4,8 @@
     .purple {
         flex-direction: column;
     }
+
+    
     
 }
 
@@ -33,6 +35,38 @@
 
     .nav {
         display: none;
+    }
+
+    #costado {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: right 1s;
+    }
+
+    #costado:target {
+        right: 0;
+    }
+
+    .nav__lista {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav__item--close {
+        display: block;
+    }
+     
+    .nav__item {
+        margin-left: 0;
     }
 
     main section h1 {

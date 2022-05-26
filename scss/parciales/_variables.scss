@@ -1,2 +1,19 @@
+$vista: mobile;
+$color: blue;
+$tamañofuente: 30px;
 
-$color: orange
+
+@if $vista == joako {
+
+    $color: red;
+    
+
+}
+
+@else if $vista == mobile {
+
+    $color: orange;
+    $tamañofuente: 20px;
+    
+    
+}
