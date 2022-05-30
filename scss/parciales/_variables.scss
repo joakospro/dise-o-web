@@ -17,3 +17,15 @@ $tamañofuente: 30px;
     
     
 }
+
+$mapa: (
+titulos: white,
+subtitulos: chocolate,
+navegadores: #fff
+);
+
+@each $clave, $valor in $mapa {
+    .btn-#{$clave} {
+        color: $valor;
+    }
+}

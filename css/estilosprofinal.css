@@ -1,3 +1,15 @@
+.btn-titulos {
+  color: white;
+}
+
+.btn-subtitulos {
+  color: chocolate;
+}
+
+.btn-navegadores {
+  color: #fff;
+}
+
 .imgproduto {
   background-color: aliceblue;
   color: blueviolet;
