@@ -19,6 +19,9 @@
 }
 
 @media screen and (max-width: 600px){
+
+
+
     .seccion{
         display: flex;
     }
@@ -133,4 +136,22 @@
  video {
      width: 100%;
  }
+
+ .footer {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer__texto {
+    order: -1;
+}
+
+.footer__marca {
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+h2{
+    font-size: smaller;
+}
 }

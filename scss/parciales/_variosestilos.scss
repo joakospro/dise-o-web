@@ -1,5 +1,40 @@
 
 
+.texto {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: purple;
+    text-align: center;
+    padding: 5px;
+    }
+
+.formulario {
+    background-image:linear-gradient(45deg, green, purple);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-evenly;
+    
+}
+
+.formulario__contenido {
+    
+    padding-bottom: 2px;
+    
+}
+
+.formulario__boton {
+    
+    padding: 5px;
+}
+
+.casillaemail {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
 .botonera {
     position: relative;
 }
