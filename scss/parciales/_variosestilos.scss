@@ -1,11 +1,18 @@
-
-
-.texto {
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    color: purple;
+.textoresponsive{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    padding: 5px;
-    }
+}
+
+.boton{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightpink;
+    color: brown;
+    margin-left: 5px;
+    border: 2px solid lightcoral;
+    border-radius: 5px; 
+}
+
+
 
 .formulario {
     background-image:linear-gradient(45deg, green, purple);
@@ -30,6 +37,7 @@
 .casillaemail {
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -139,11 +147,6 @@ main section h1 {
 
 }
 
-p {
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-}
 
 .faq {
     background-color: whitesmoke;
@@ -170,3 +173,28 @@ p {
 }
 
 
+.quienessomos {
+    background-color: aliceblue;
+    width: 400px;
+    height: 250px;
+}
+
+.texto {
+    font-family:'Times New Roman', Times, serif ;
+        color: purple;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    
+    }
+
+    .homesheet {
+
+        background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        width: 97%;
+        height: 400px;
+        margin: 16px 16px 16px 16px;
+        padding: 5px;
+    }
