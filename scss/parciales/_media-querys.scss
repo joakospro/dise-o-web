@@ -102,6 +102,7 @@
 
     .orange {
         
+        font-size: larger;
         padding: 16px;
         margin: 16px;
     }
@@ -120,9 +121,16 @@
     }
 
     .BLOGFLEX {
-        display: block;
-        border: 5px double $color;
-        border-radius: 5px;
+        display: contents;
+        
+        align-items: center !important;
+        
+        
+    }
+
+    .paralaxx {
+        font-size: medium;
+        background-attachment: unset;
     }
 
     .faq {

@@ -49,7 +49,7 @@
 
 
 
-main section h1 {
+/*main section h1 {
     color: chocolate;
     margin: 16px;
     padding: 8px;
@@ -58,7 +58,8 @@ main section h1 {
     text-align: center;
     font-style: oblique;
 
-}
+}*/
+
 .purple {
     color: #fff;
     background-color: rgb(255, 236, 196);
@@ -92,24 +93,29 @@ main section h1 {
 }
 
 .orange {
-    border: 2px solid $color;
-    border-radius: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(107, 72, 8);
     text-align: center;
 }
 
 .paralaxx {
     color: white;
-    background-color: gray;
+    /*background-color: gray;*/
+    min-height: 300px;
     margin: 50px;
     padding: 30px;
     font-size: 30px;
-    background-image: url(https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68);
+    background-image: url(https://i.picsum.photos/id/617/2509/1673.jpg?hmac=FyFaMt07sniSty8upa_5kIkAOQUy7OFnjcrPf6hISYk);
     background-repeat: no-repeat;
     background-position: center;
         background-size: cover;
         background-attachment: fixed;
-
+        
+        
+      &__texto {
+        margin-top: 85px;
+        padding-right: 800px;
+      }
 
    
 }
@@ -133,17 +139,32 @@ main section h1 {
 }
 
 .BLOGFLEX {
-    line-height: 1.6;
-    border: 2px solid black;
-    border-radius: 2px;
+    
     margin: 16px;
-    width: 300px;
-    height: 150px;
+    padding: 16px;
+    width: 100%;
+    height: 350px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: ROW;
+    justify-content:  space-evenly;
     align-content: center ;
 
+&__img {
+    align-self: center;
+    height: 60%;
+    width: 50%;
+   
+}
+&__img1 {
+    align-self: center;
+    width: 40%;
+    height: 50% ;
+    padding-top: 5px; 
+}
+&__img2 {
+    margin: 16px;
+    width: 250px;
+}
 
 }
 
@@ -187,14 +208,7 @@ main section h1 {
     width: 100%;
     height: 100%;
     font-size: 19px;
+   
+    }
+
     
-    }
-
-    .homesheet {
-
-        background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-        width: 97%;
-        height: 400px;
-        margin: 16px 16px 16px 16px;
-        padding: 5px;
-    }
