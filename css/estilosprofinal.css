@@ -354,7 +354,6 @@ main section {
 
 .paralaxx {
   color: white;
-  /*background-color: gray;*/
   min-height: 300px;
   margin: 50px;
   padding: 30px;
@@ -364,11 +363,12 @@ main section {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 .paralaxx__texto {
   margin-top: 85px;
-  padding-right: 800px;
+  position: absolute;
 }
 
 .seccion {
@@ -390,7 +390,6 @@ main section {
 }
 
 .BLOGFLEX {
-  margin: 16px;
   padding: 16px;
   width: 100%;
   height: 350px;
@@ -618,7 +617,6 @@ main section {
   }
   .BLOGFLEX {
     display: contents;
-    align-items: center !important;
   }
   .paralaxx {
     font-size: medium;
