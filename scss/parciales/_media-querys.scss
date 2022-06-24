@@ -20,7 +20,16 @@
 
 @media screen and (max-width: 600px){
 
+   .mapa {
+     
+    max-width: 100%;
+    
 
+   }
+
+   .textomapa{
+    margin-top: 16px;
+   }
 
     .seccion{
         display: flex;
