@@ -286,7 +286,6 @@ main section {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-items: space-evenly;
 }
 
 .formulario__contenido {
