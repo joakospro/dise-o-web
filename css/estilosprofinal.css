@@ -340,9 +340,6 @@ main section {
   border-radius: 32px;
   padding: 5px;
   margin: 16px;
-  width: 300px;
-  text-align: center;
-  font-style: oblique;
 }
 
 .orange {
@@ -454,6 +451,14 @@ main section {
   width: 100%;
   height: 100%;
   font-size: 19px;
+}
+
+.textovideo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #6b4808;
+  padding-top: 32px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .grid {
